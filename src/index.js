@@ -4,6 +4,10 @@ app.get('/', (req, res) => {
     res.json({ message: 'Docker is easy' })
 });
 
+app.get('/login', (req, res) => {
+    res.json({ message: 'here is the login route' })
+});
+
 const port = process.env.port || 8080;
 
 app.listen(port, () => {
