@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
     res.json({ message: 'Docker is easy' })
 });
 
+app.get('/auth/profile', (req, res) => {
+    res.json({ message: 'Profile from auth request' })
+});
+
 app.use('/api/v1/', apiV1)
 app.use('/api/v2/', apiV2)
 
